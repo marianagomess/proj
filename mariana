@@ -1,0 +1,358 @@
+import java.text.Collator;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+ /* @author Mariana Gomes
+
+
+import java.util.Scanner;
+
+class Agent{
+    public String lut[][];
+      
+    public Agent(){
+           
+        lut= new String[54][2];{
+        
+        lut[0][0] = "Qual seu filme favorito da Disney?";
+        lut[0][1] = "O rei Leão.";
+    
+        lut[1][0] = "Qual a sua princesa favorita?";
+        lut[1][1] = "Ariel.";
+        
+        lut[2][0] = "Qual o seu príncipe favorito?";
+        lut[2][1] = "Principe Adam , a fera.";
+        
+        lut[3][0] = "Qual sua heroína favorita (Sem ser Princesa)?";
+        lut[3][1] = "Mulan.";
+        
+        lut[4][0] = "Qual seu herói favorito (Sem ser Príncipe)?";
+        lut[4][1] = "Aladdin.";
+        
+        lut[5][0] = "Qual sua rainha favorita?";
+        lut[5][1] = "Elsa.";
+        
+        lut[6][0] = "Qual o seu rei favorito?";
+        lut[6][1] = "Simba.";
+        
+        lut[7][0] = "Qual sua(eu) vilã(o) favorito?";
+        lut[7][1] = "Ades.";
+        
+        lut[8][0] = "Qual seu casal favorito?";
+        lut[8][1] = "A bela e a Fera.";
+        
+        lut[9][0] = "Qual a sua dança favorita?";
+        lut[9][1] = "Valsa da bela com a fera.";
+        
+        lut[10][0] = "Qual a sua cena de família favorita?";
+        lut[10][1] = "Mas é boa, é... é boa.";
+        
+        lut[11][0] = "Qual a sua cena emocional favorita?";
+        lut[11][1] = "Moana descobrindo a Tefiti.";
+        
+        lut[12][0] = "Quem é a sua criança favorita?";
+        lut[12][1] = "Lilo.";
+        
+        lut[13][0] = "Qual o seu filme de animais favorito?";
+        lut[13][1] = "Zootopia.";
+        
+        lut[14][0] = "Qual o seu personagem animal favorito?";
+        lut[14][1] = "Judy Hopps, Zootopia.";
+        
+        lut[15][0] = "Qual sua música favorita?";
+        lut[15][1] = "Circle Of Life de O Rei Leão.";
+        
+        lut[16][0] = "Qual sua música masculina favorita?";
+        lut[16][1] = "Homem Ser, Mulan.";
+        
+        lut[17][0] = "Qual sua música feminina favorita?";
+        lut[17][1] = "Cores do Vento, Pocahontas.";
+        
+        lut[18][0] = "Qual cena você acha mais bonita?";
+        lut[18][1] = "Vejo, Enfim, a Luz Brilhar, Enrolados.";
+        
+        lut[19][0] = "Qual o seu final favorito?";
+        lut[19][1] = "Pocahontas.";
+        
+        lut[20][0] = "Qual a sua derrota de vilão favorita?";
+        lut[20][1] = "Clayton.";
+        
+        lut[21][0] = "Qual sua música de vilã(o) favorita?";
+        lut[21][1] = "Meu, meu, meu, Pocahontas.";
+        
+        lut[22][0] = "Qual sua música romântica favorita?";
+        lut[22][1] = "Não Direi Que é Paixão, Hercules.";
+        
+        lut[23][0] = "Qual o seu confronto herói/vilão favorito?";
+        lut[23][1] = "Busca pela poção, a Nova Onda do Imperador.";
+        
+        lut[24][0] = "Qual o seu começo de filme favorito?";
+        lut[24][1] = "O rei Leão.";
+        
+        lut[25][0] = "Qual a sua sequência favorita?";
+        lut[25][1] = "O Rei Leão 2.";
+        
+        lut[26][0] = "Qual filme tem a melhor mensagem?";
+        lut[26][1] = "Ohana.";
+        
+        lut[27][0] = "Qual o momento mais corajoso entre os filmes?";
+        lut[27][1] = "A decisão da Mulan.";
+        
+        lut[28][0] = "Qual o momento mais triste?";
+        lut[28][1] = "Deixando a Raposa, O cão e a rapousa.";
+        
+        lut[29][0] = "Qual seu responsável (pai/mãe) favorito?";
+        lut[29][1] = "Musafa, O rei Leão.";
+        
+        lut[30][0] = "Qual sua cena de beijo favorita?";
+        lut[30][1] = "Tarzan e Jane.";
+        
+        lut[31][0] = "Qual sua amizade favorita?";
+        lut[31][1] = "Timão e Pumba.";
+        
+        lut[32][0] = "Qual foi a morte mais triste para você?";
+        lut[32][1] = "Mufasa, O Rei Leão.";
+        
+        lut[33][0] = "Qual sua citação favorita?";
+        lut[33][1] = "Kronk ensinando esquiles, A Nova Onda do Imperador.";
+        
+        lut[34][0] = "Qual a personagem você acha mais bonita?";
+        lut[34][1] = "Esmeralda, O Corcunda de Notre Dame.";
+        
+        lut[35][0] = "Qual o personagem você acha mais bonito?";
+        lut[35][1] = "Principe Eric, A Pequena Sereia.";
+        
+        lut[36][0] = "Qual bebê mais fofo da Disney?";
+        lut[36][1] = "Baby Moana, Moana.";
+        
+        lut[37][0] = "Qual animal você acha mais fofo?";
+        lut[37][1] = "Meeko, Pocahontas.";
+        
+        lut[38][0] = "Que personagem você acha mais engraçado?";
+        lut[38][1] = "Kronk, A Nova Onda do Imperador.";
+        
+        lut[39][0] = "Qual seu filme 3D (ou 2D se o seu favorito é 3D) da Disney favorito?";
+        lut[39][1] = "Moana (2016).";
+        
+        lut[40][0] = "Seus(uas) irmãos(ãs) favoritos(as)?";
+        lut[40][1] = "Lilo e Nani - Lilo & Stitch.";
+        
+        lut[41][0] = "Qual seu curta animado da Disney favorito?";
+        lut[41][1] = "O Avião de Papel.";
+        
+        lut[42][0] = "Qual seu filme subestimado da Disney favorito?";
+        lut[42][1] = "Irmão Urso.";
+        
+        lut[43][0] = "Qual filme da Disney é mais nostálgico para você?";
+        lut[43][1] = "Pocahontas.";
+        
+        lut[44][0] = "Qual seu filme menos favorito (ou que não gosta)?";
+        lut[44][1] = "Nem que a Vaca Tussa.";
+        
+        lut[45][0] = "Qual seu personagem do universo do Mickey Mouse favorito?"
+        lut[45][1] = "Pateta."
+        
+        lut[46][0] = "Qual seu Live Action favorito?"
+        lut[46][1] = "Mogli : o menino lobo."
+        
+        lut[48][0] = "Uma cena de qualquer filme da Disney que você gostaria de viver?"
+        lut[48][1] = "Poderes do Mikey."
+        
+        lut[49][0] = "Qual sua fase da Disney favorita?";
+        lut[49][1] = "Renascimento.";
+             
+          
+    } 
+}
+    public String ask(String question){
+        
+       String answer ="Eu não sei! Sem Infancia!";
+        boolean found =false;
+        boolean end=false;
+        int i= 0;
+
+     //ignora letras maisculas de minusculas
+     
+     while(!found && !end){
+       if(question.equalsIgnoreCase (lut[i][0])){
+           found = true;
+           answer =lut [i][1];
+       }++i;
+       if(i>=lut.length){
+           end=true;
+       }  
+       //verifica se uma frase está contida na outra.   
+}
+        return answer;  
+       }
+}
+public class Main {
+  
+    public static void main(String[] args) {
+      
+        System.out.println("Oi, sou uma Eterna Crianca.");
+            System.out.println("Qual a sua dúvida sobre a Dysnei?");
+                Scanner scanner = new Scanner(System.in);
+                    String  question = scanner .nextLine(); 
+                        question= question.replace(".", "");
+                            question= question.replace("/", "");
+                                question= question.replace("?", "");
+                            question= question.replace("-", "");
+                        question= question.replace("é", "e");   
+                    question= question.replace("á", "a");   
+                System.out.println("Good!");
+            Agent bot= new Agent();
+        while(!question.equals("sair"))
+        {
+            System.out.println(bot.ask(question));
+            question = scanner.nextLine();
+        } 
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\\Jogo da Velha
+
+import java.util.Scanner;
+
+class Model {
+    public char board[][];
+
+    public Model() {
+        board = new char[3][3];
+        board[0][0] = ' ';
+        board[0][1] = ' ';
+        board[0][2] = ' ';
+        board[1][0] = ' ';
+        board[1][1] = ' ';
+        board[1][2] = ' ';
+        board[2][0] = ' ';
+        board[2][1] = ' ';
+        board[2][2] = ' ';
+    }
+
+    public String key() {
+        String result = "" +
+                board[0][0] + board[1][0] + board[2][0] +
+                board[0][1] + board[1][1] + board[2][1] +
+                board[0][2] + board[1][2] + board[2][2];
+
+        return result;
+    }
+
+    public void print() {
+        System.out.println(
+            "|" + board[0][0] + "|" + board[1][0] + "|" + board[2][0] + "|\n" +
+            "|" + board[0][1] + "|" + board[1][1] + "|" + board[2][1] + "|\n" +
+            "|" + board[0][2] + "|" + board[1][2] + "|" + board[2][2] + "|");
+    }
+
+
+    public boolean play(char mark, int i, int j) {
+        boolean succeeded = false;
+        if (mark != 'O' && mark != 'o' && mark != 'X' && mark != 'x') {
+            System.out.println("Jogada inválida, insira X ou O.");
+        }
+        if (i < 0 || i > 2 || j < 0 || j > 2) {
+            System.out.println("Jogada inválida, posicione a jogada entre os valores 0 e 2.");
+        }
+        if (board[j][i] != ' ') {
+            System.out.println("Jogada inválida, posição já marcada.");
+        } else {
+            board[j][i] = mark;
+            succeeded = true;
+            print();
+        }
+        return succeeded;
+    }
+}
+
+class Agent {
+    public Model model;
+    public boolean finished;
+
+    Agent() {
+        model = new Model();
+        finished = false;
+    }
+
+    public boolean isWinner(){
+        String key = model.key();
+        if(key.equals("XOO X   X")) finished = true;
+        if(key.equals("XO OX   X")) finished = true;
+        if(key.equals("XO  XO  X")) finished = true;
+        if(key.equals("XO  X O X")) finished = true;
+        if(key.equals("XO  X  OX")) finished = true;
+        if(key.equals("XOOXX X O")) finished = true;
+        if(key.equals("XOXOX X O"))	finished = true;
+        if(key.equals("XO XXOX O"))	finished = true;
+        if(key.equals("XO XX XOO"))	finished = true;
+        if(key.equals("XO OO XXX"))	finished = true;
+        if(key.equals("XO OX XOX"))	finished = true;
+        if(key.equals("XO XO X  "))	finished = true;
+        if(key.equals("XOOX  X  "))	finished = true;
+        if(key.equals("XO X OX  "))	finished = true;
+        if(key.equals("XO X  XO "))	finished = true;
+        if(key.equals("XO X  X O"))	finished = true;
+        return finished;
+    }
+
+    public boolean play() {
+        String key = model.key();
+        if (key.equals("XO       ")) model.play('X', 2, 0);
+        if (key.equals("XO O  X  ")) model.play('X', 2, 2);
+        if (key.equals("XO OO X X")) model.play('X', 2, 1);
+        if (key.equals("XO O  XOX")) model.play('X', 1, 1);
+        if (key.equals("XO  O X  ")) model.play('X', 1, 0);
+        if (key.equals("XOO   X  ")) model.play('X', 1, 0);
+        if (key.equals("XO   OX  ")) model.play('X', 1, 0);
+        if (key.equals("XO    XO ")) model.play('X', 1, 0);
+        if (key.equals("XO    X O")) model.play('X', 1, 0);
+        return true;
+    }
+
+    public boolean play(char mark, int i, int j) {
+        return model.play(mark, i, j);
+    }
+}
+
+public class TicTacToe {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Vamos jogar jogo da velha, vou começar");
+
+        Agent agent = new Agent();
+        agent.play('X', 0, 0);
+
+        while (!agent.finished) {
+            if(agent.isWinner()){
+                agent.finished = false;
+                System.out.println("O jogo acabou, e o jogador 'X' venceu!");
+                System.exit(0);
+            } else {
+                boolean isValidPlay = false;
+                while (!isValidPlay) {
+                    System.out.println("digite a posição da casa que você vai jogar");
+                    int i = Integer.parseInt(scanner.nextLine());
+                    int j = Integer.parseInt(scanner.nextLine());
+                    isValidPlay = agent.play('O', i, j);
+                }
+                agent.play();
+            }
+        }
+    }
+}
